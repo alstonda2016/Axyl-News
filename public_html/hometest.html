@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <title>Axyl News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="alIcon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="css/des.css">  
+
+
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top" >
+            <div class="w3-bar w3-white w3-card" id="myNavbar" >
+                <!--  <a href="hometest.html" class="w3-bar-item w3-button w3-wide">AXYL</a> -->
+
+
+
+                <!--   <img width="237" height="60" class="pull-left w3-bar-item  w3-wide" onclick="gtHome()" alt="sample-image" src="anl1.png">  -->
+                <a href="index.html">
+                    <img src="al5.png"
+                         width="200" height="60" class="pull-left w3-bar-item  w3-wide"
+                         >
+                </a>
+
+
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small w3-hide-medium">
+                    <a href="us_news.html" title="" class=" w3-bar-item w3-button">National</a>
+                    <a href="world_news.html" title=""  class=" w3-bar-item w3-button">World</a>
+                    <a href="wh.html"  class=" w3-bar-item w3-button ">The White House</a>	
+                    <!--  <a href="profile.html"  class="w3-bar-item w3-button">Election 2020</a> -->	
+                    <a  id="profBtn" onclick="gtAS()" class="w3-bar-item w3-button thickBorder">  </a>										
+
+                    <!--    <a href="hometest.html"  class="w3-bar-item w3-button">test</a> -->
+                    <!--
+<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                    -->
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left  w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 redText " >X</a>
+            <!--   <img src="Group.png" width="20" height="20" class='centerTabImage'> -->
+
+
+            <a href="us_news.html" onclick="w3_close()" class="w3-bar-item w3-button">National</a>
+            <a href="world_news.html" onclick="w3_close()" class="w3-bar-item w3-button">World</a>
+            <a href="wh.html" onclick="w3_close()" class="w3-bar-item w3-button ">The White House</a>
+            <hr>    
+            <a id="accBtnSO" onclick="w3_close_SI()" class="w3-bar-item w3-button ">Sign In</a>
+
+        </nav>
+
+        <!-- Header with full-height image -->
+        <header class=" w3-bar-block w3-grayscale-min" id="home">
+
+
+        </header>
+
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Header -->
+        <header class="w3-display-container w3-content w3-hide-medium w3-hide-small" style="max-width:1500px">
+            <div class="w3-row-padding w3-center w3-margin-top">
+                <div class="w3-third" onclick="gtUN()">
+                    <div class="w3-card w3-container" style="min-height:430px">
+                        <h1 class="boldFont ">National</h1><br>
+                        <img src="cptl.svg" width="100" height="100" class='fillwidthy'>
+                        <br>
+                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
+                        <h1>Top stories following National leaders</h1>
+                        <!--  <p>Mobile first fluid grid</p>
+                          <p>Fits any screen sizes</p>
+                          <p>PC Tablet and Mobile</p>
+                        -->
+                    </div>
+                </div>
+
+                <div class="w3-third" onclick="gtGlobal()">
+                    <div class="w3-card w3-container" style="min-height:430px">
+                        <h1 class="boldFont ">World</h1><br>
+                        <img src="glbl.svg" width="100" height="100" class='fillwidthy'>
+
+                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
+                        <h1>Top stories following world leaders</h1>
+
+
+                    </div>
+                </div>
+
+                <div class="w3-third" onclick="gtWhiteHouse()">
+                    <div class="w3-card w3-container" style="min-height:430px">
+                        <h1 class="boldFont ">White House</h1><br>
+
+                        <img src="whp.svg" width="100" height="100" class='fillwidthy'>
+
+                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
+                        <h1 >Top stories following the President</h1>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+
+
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left:250px">
+
+            <div class="w3-row w3-padding-64">
+
+                <div class="w3-twothird w3-container">
+
+
+                    <ul id="friendsList">
+                    </ul>
+                    <div id="ldr" class="loader center"></div>
+
+                    <a  id = "btt" onclick="nextRun()" class="w3-button w3-light-grey fullWidth" style="visibility: hidden">Show More</a>
+
+
+
+
+                </div>
+                <div class="w3-third w3-container w3-card ">
+                    <h3 > Top Stories </h3>
+
+                    <ul id="topList">
+
+                    </ul> 
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-32">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <!--    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+            <p>© 2019 </p>
+        </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+        <script src="ulii.js"></script>
+
+        <script>
+
+
+                        var indexy = 0;
+                        var nVal = "";
+                        var hasShownAllPosts = false;
+                        var iter = 0;
+
+                        var ref = firebase.database().ref().child('TOPIC').orderByChild('topicCreationTimeInverse').limitToFirst(11);
+                        ref.once('value', function (snapshot) {
+                            var looptyloop = 0;
+                            var btt = document.getElementById("btt");
+                            btt.style.visibility = "visible";
+                            snapshot.forEach(function (childSnapshot) {
+                                var childKey = childSnapshot.key;
+                                var childData = childSnapshot.val();
+                                nVal = childData.topicCreationTimeInverse;
+
+                                looptyloop++;
+
+                                if (iter < 10)
+                                {
+
+
+
+                                    var ul = document.getElementById("friendsList");
+                                    var li = document.createElement('li');
+                                    var g = document.createElement('div');
+                                    //g.setAttribute("123", "Div1");
+                                    g.style.height = "50";
+                                    var articleString = "";
+                                    var articlesList = childData.articleList;
+
+
+                                    var ldrV = document.getElementById("ldr");
+                                    ldrV.style.visibility = "hidden"
+
+                                    li.appendChild(g);
+
+                                    var div = document.createElement('div');
+
+                                    div.className = 'row';
+
+                                    div.onclick = function () {
+                                        // alert(this.innerHTML);
+
+
+                                        // var getInput = prompt("Hey type something here: ");
+                                        var tN = childData.topicName;
+                                        var rd1 = childData.strRundownPoint1;
+                                        var rd2 = childData.strRundownPoint2;
+                                        var rd3 = childData.strRundownPoint3;
+                                        localStorage.setItem("rd1", rd1);
+                                        localStorage.setItem("rd2", rd2);
+                                        localStorage.setItem("rd3", rd3);
+                                        localStorage.setItem("storageName", childKey);
+                                        localStorage.setItem("topicName", tN);
+                                        if (isi) {
+                                            var user = firebase.auth().currentUser;
+
+                                            var userID = user.uid;
+
+
+                                            var d = new Date();
+                                            var n = d.getTime();
+
+                                            firebase.database().ref().child("TOPIC_CLICK_LIST").child(childKey).child(userID).set(n);
+                                            firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set(childData);
+                                            //  document.body.style.backgroundColor = "red";
+
+                                        }
+                                        window.location = "topic.html"
+
+
+
+
+                                    };
+
+                                    var lstLst1 = childData.lstArticleHeadlines;
+
+
+                                    var date = timeSince(new Date(childData.topicCreationTime));
+
+                                    var myStr = 'this,is,a,test';
+                                    // var lstLst = lstLst1.replace(/,/g, '-');
+
+                                    div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>Including articles from: ' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
+
+
+                                    li.appendChild(div);
+
+                                    ul.appendChild(li);
+                                }
+                                iter++;
+
+                            });
+
+
+                            if (looptyloop < 11) {
+                                hasShownAllPosts = true;
+                                // document.body.style.backgroundColor = "green";
+
+                                nVal = 'null';
+
+                                var btt = document.getElementById("btt");
+                                btt.style.visibility = "hidden";
+                            }
+                        });
+
+
+
+
+
+
+
+                        function nextRun() {
+
+                            var iter = 0;
+                            var ldrV = document.getElementById("ldr");
+                            ldrV.style.visibility = "visible"
+                                   var btt = document.getElementById("btt");
+                            btt.style.visibility = "hidden";
+
+                            // var ref = firebase.database().ref().child('TOPIC').orderByChild('topicCreationTimeInverse').startAt(nVal).limitToFirst(11);
+                            var ref = firebase.database().ref().child('TOPIC').orderByChild('topicCreationTimeInverse').startAt(nVal).limitToFirst(11);
+
+                            ref.once('value', function (snapshot) {
+                                var looptyloop = 0;
+                                var btt = document.getElementById("btt");
+                                btt.style.visibility = "visible";
+                                snapshot.forEach(function (childSnapshot) {
+                                    var childKey = childSnapshot.key;
+                                    var childData = childSnapshot.val();
+                                    // nVal = childKey;
+                                    nVal = childData.topicCreationTimeInverse;
+
+                                    looptyloop++;
+
+                                    if (iter < 10)
+                                    {
+
+
+
+                                        var ul = document.getElementById("friendsList");
+                                        var li = document.createElement('li');
+                                        var g = document.createElement('div');
+                                        g.style.height = "50";
+                                        var articleString = "";
+                                        var articlesList = childData.articleList;
+
+
+
+                                        li.appendChild(g);
+
+                                        var div = document.createElement('div');
+
+                                        div.className = 'row';
+
+                                        div.onclick = function () {
+
+
+                                            var tN = childData.topicName;
+                                            var rd1 = childData.strRundownPoint1;
+                                            var rd2 = childData.strRundownPoint2;
+                                            var rd3 = childData.strRundownPoint3;
+                                            localStorage.setItem("rd1", rd1);
+                                            localStorage.setItem("rd2", rd2);
+                                            localStorage.setItem("rd3", rd3);
+                                            localStorage.setItem("storageName", childKey);
+                                            localStorage.setItem("topicName", tN);
+                                            if (isi) {
+                                                var user = firebase.auth().currentUser;
+
+                                                var userID = user.uid;
+
+
+                                                var d = new Date();
+                                                var n = d.getTime();
+
+                                                firebase.database().ref().child("TOPIC_CLICK_LIST").child(childKey).child(userID).set(n);
+                                                firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set(childData);
+                                                //  document.body.style.backgroundColor = "red";
+
+                                            }
+                                            window.location = "topic.html"
+
+
+
+
+                                        };
+
+                                        var lstLst = childData.lstArticleHeadlines;
+
+
+                                        var date = timeSince(new Date(childData.topicCreationTime));
+
+
+
+
+                                                     div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>Including articles from: ' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
+
+
+
+
+                                        var ldrV = document.getElementById("ldr");
+                                        ldrV.style.visibility = "hidden"
+
+                                        li.appendChild(div);
+
+                                        ul.appendChild(li);
+                                    }
+                                    iter++;
+
+                                });
+
+
+                                if (looptyloop < 11) {
+                                    hasShownAllPosts = true;
+
+                                    nVal = 'null';
+
+                                    var btt = document.getElementById("btt");
+                                    btt.style.visibility = "hidden";
+                                }
+                            });
+                            innerText = indexy.toString();
+
+                        }
+
+
+
+
+
+
+
+                        function prev() {
+                            document.body.style.backgroundColor = "red";
+                        }
+
+
+
+
+                        function nextt() {
+                            var btt = document.getElementById("btt");
+                            btt.style.visibility = "hidden";
+                            if (!hasShownAllPosts) {
+                                nextRun();
+                            }
+
+                        }
+
+
+
+                        var topArticleRef = firebase.database().ref().child('TOPIC').orderByChild('topicClickRank').limitToFirst(5);
+                        topArticleRef.once('value', function (snapshot) {
+                            snapshot.forEach(function (childSnapshot) {
+                                var childKey = childSnapshot.key;
+                                var childData = childSnapshot.val();
+
+
+
+
+
+                                var ul = document.getElementById("topList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                                div.onclick = function () {
+
+                                    var tN = childData.topicName;
+                                    var rd1 = childData.strRundownPoint1;
+                                    var rd2 = childData.strRundownPoint2;
+                                    var rd3 = childData.strRundownPoint3;
+                                    localStorage.setItem("rd1", rd1);
+                                    localStorage.setItem("rd2", rd2);
+                                    localStorage.setItem("rd3", rd3);
+                                    localStorage.setItem("storageName", childKey);
+                                    localStorage.setItem("topicName", tN);
+                                    window.location = "topic.html"
+
+
+
+
+                                };
+
+                                var date = new Date(childData.topicCreationTime);
+
+
+                                div.innerHTML =
+                                        '<hr><label> ' + childData.topicName + ' </label>\<br>';
+
+                                li.appendChild(div);
+
+                                ul.appendChild(li);
+
+
+                            });
+                        });
+
+
+
+
+
+        </script>
+
+    </body>
+</html>

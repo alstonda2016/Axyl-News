@@ -1,0 +1,681 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2018, 11:35:07 AM
+    Author     : davida
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+font-weight: bold;
+*/
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;
+
+                        
+
+}
+.boldFont{
+    font-weight: bold;
+
+}
+
+.imgFull{
+    background-size:cover;
+    background-size: 100%;
+  background-color: blue;
+
+background-size: cover;
+-ms-background-size: cover; 
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+
+
+
+}
+
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 65px;
+      bottom: 0;
+      height: inherit;
+    }
+
+    .center {
+        margin:auto;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .fullWidth {
+
+      width: 100%;
+
+      height: inherit;
+    }
+    .postCellPad {
+      padding: 8px;
+    }
+    
+
+.chat-dialog-window {
+  height: 200px;
+  /*border: 1px black solid;*/
+}
+
+.chat-scrollable-content {
+  height: 180px;
+  overflow: auto;
+ /* background-color: blue;
+ */
+}
+
+.chat-footer {
+  height: 20px;
+  width:100%;
+}
+
+
+
+
+input {
+display: block;
+margin-bottom:1em;
+width: 100%;
+    
+    
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+.rundown {
+display: block;
+margin-bottom:1em;
+font-size: 20px; 
+      margin: auto;
+
+    
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+.center {
+  margin: auto;
+  width: 90%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+.tTitle {
+    width: 100px;
+    float: left;
+    height: 300px;
+}
+.tSubButton {
+    width: 200px;
+    float: left;
+    height: 300px;
+    background-color: green;
+}
+
+    
+    .simpleBorder {
+  border-style: solid;
+  border-width: 1px;
+}
+
+ .thickBorder {
+  border-style: solid;
+  border-width: 10px;
+}
+
+.fillwidthy {
+        max-width:100%;
+         height: auto;
+      object-fit: cover;
+overflow:hidden;
+  vertical-align: top;
+       
+  /*
+        min-width:80%;
+
+        max-height:100%;
+      object-fit: cover;
+overflow:hidden;
+  vertical-align: top;
+  
+  */
+
+}
+
+.centerTabImage {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.redText{
+      color: red;
+  font-weight: bold;
+
+}
+.shorterWidth{
+     
+  padding: 25px;
+
+}
+
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+.center {
+    margin:auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fullWidth {
+ 
+  width: 100%;
+ 
+  height: inherit;
+}
+.postCellPad {
+  padding: 1px;
+}
+
+.chat-dialog-window {
+  height: 500px;
+    width:100%;
+
+  border: 1px black solid;
+}
+
+.chat-scrollable-content {
+  height: 500px;
+  overflow: auto;
+}
+
+.chat-footer {
+  height: 20px;
+  width: 100%;
+
+}
+
+.tTitle {
+    width: 100px;
+    float: left;
+    height: 300px;
+}
+.tSubButton {
+    width: 200px;
+    float: left;
+    height: 300px;
+    background-color: green;
+}
+
+ .postCellPad {
+      padding: 8px;
+    }
+    
+    .simpleBorder {
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+hr { /*background-color: #D3D3D3; height: 1px; border: 0; 
+     */
+         border-top: 1px solid #D3D3D3;
+
+ }
+textarea {
+display: block;
+margin-bottom:1em;
+      background-color: #D3D3D3;
+  border-radius: 8px;
+  border: 0px black solid;
+ border-collapse: separate;
+  border-spacing: 15px;
+  padding: 16px;
+
+      width: 100%;
+
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+
+.btnSubButton {
+display: block;
+margin-bottom:1em;
+      background-color: #BA142A;
+  border-radius: 5px;
+  border: 0px black solid;
+  padding: 6px;
+width: 80px;
+height: 40px;
+ color: white;
+
+    
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+
+.btnSubWide {
+display: block;
+margin-bottom:1em;
+      background-color: #BA142A;
+  border-radius: 5px;
+  border: 0px black solid;
+  padding: 6px;
+width: 160px;
+height: 40px;
+ color: white;
+
+    
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+
+
+.centerDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.bulletPoint {
+  display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+
+
+}
+
+
+.topicBtn{
+padding: 0;
+border: none;
+background: none;
+    
+    
+}
+.subText{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+    border-radius: 5px;
+
+}
+
+
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.profImg{
+    border-radius: 50%;
+
+}
+
+.loader {
+border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #BA142A;
+ /* border-bottom: 5px solid #BA142A;*/
+  width: 45px;
+  height: 45px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.undrlne{
+   border-bottom: 5px solid #BA142A;
+  width: 100%;
+
+}
+
+.undrlneLeftView{
+   border-bottom: 3px solid #120240;
+  width: 100%;
+
+}
+
+.undrlneRightView{
+   border-bottom: 3px solid #BA142A;
+  width: 100%;
+
+}
+.toplneArticle{
+   border-top: 1px solid #120240;
+  width: 100%;} 
+/*
+.postCellPad {
+  padding: 8px;
+}
+
+.chat-dialog-window {
+  height: 200px;
+  border: 1px black solid;
+}
+
+.chat-scrollable-content {
+  height: 180px;
+  overflow: auto;
+  background-color: blue;
+}
+
+.chat-footer {
+  height: 20px;
+}
+
+
+
+
+input {
+display: block;
+margin-bottom:1em;
+width: 100%;
+    
+    
+   /* border: 2px solid #4A3ECD;
+
+  
+
+}
+.rundown {
+display: block;
+margin-bottom:1em;
+font-size: 20px; 
+      margin: auto;
+
+    
+   /* border: 2px solid #4A3ECD;
+
+  
+
+}
+.center {
+  margin: auto;
+  width: 90%;
+  border: 1px solid black;
+  padding: 5px;
+}
+*/
+/*
+.dropbtn {
+  background-color: white;
+  color: #BA142A;
+  padding: 8px;
+  font-size: 16px;
+   font-weight: bold;
+
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+color: white;
+  background-color: #BA142A;}
+*/
+
+
+.padFromLeft{
+ padding-left: 20px;
+
+}
+
+
+
+
+.dropbtn {
+  background-color: white;
+  color: #BA142A;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #BA142A;
+    color: white;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+   .centerPic {
+                width:80%;
+                margin-left: auto;
+                margin-right:auto;
+                display: block;
+            }
+            
+            
+.subTextBox{
+display: block;
+margin-bottom:1em;
+      background-color: #D3D3D3;
+  border-radius: 8px;
+  border: 0px black solid;
+ border-collapse: separate;
+  border-spacing: 15px;
+  padding: 16px;
+
+      width: 100%;
+
+   /* border: 2px solid #4A3ECD;*/
+
+  
+
+}
+
+
+
+.hrLowHeight { margin:  0px 0px; }
+
+
+.h3BottomNoPadding{
+    padding: 0px;
+    margin: 0px;
+}
+
+.allCaps {
+  text-transform: uppercase;
+}

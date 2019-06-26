@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <title>Axyl News-Breaking News from all the Top News Sites</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="See every side of the the latest breaking news by reading what all the top news sites are saying in one place">
+    <meta name="keywords" content="news,bipartisan,axyl,democrat,republican, fair, breaking news, trump, obama">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/poliapp-c85e3.appspot.com/o/sitefiles%2Fwicon.png?alt=media&token=c60dd78d-33ff-4c76-a7cd-302b50ab63e9">
+    <link rel="shortcut icon" href="alIcon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="css/des.css">  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132770311-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132770311-1');
+</script>
+
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top" >
+            <div class="w3-bar w3-white w3-card" id="myNavbar" >
+                <!--  <a href="hometest.html" class="w3-bar-item w3-button w3-wide">AXYL</a> -->
+
+
+
+                <!--   <img width="237" height="60" class="pull-left w3-bar-item  w3-wide" onclick="gtHome()" alt="sample-image" src="anl1.png">  -->
+                <a href="index.html">
+                    <img src="al5.png"
+                         width="200" height="60" class="pull-left w3-bar-item  w3-wide"
+                         >
+                </a>
+
+
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small w3-hide-medium">
+                           <a href="el.html"  class=" w3-bar-item w3-button ">Election 2020</a>	
+
+                                       <a href="wh.html"  class=" w3-bar-item w3-button ">Trump</a>	
+
+                    <a href="us_news.html" title="" class=" w3-bar-item w3-button">National</a>
+                    <a href="world_news.html" title=""  class=" w3-bar-item w3-button">World</a>
+                    <!--  <a href="profile.html"  class="w3-bar-item w3-button">Election 2020</a> -->	
+                    <a  id="profBtn" onclick="gtAS()" class="w3-bar-item w3-button thickBorder boldFont">  </a>										
+
+                    <!--    <a href="hometest.html"  class="w3-bar-item w3-button">test</a> -->
+                    <!--
+<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                    -->
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left  w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 redText " >X</a>
+            <!--   <img src="Group.png" width="20" height="20" class='centerTabImage'> -->
+            <a href="el.html" onclick="w3_close()" class="w3-bar-item w3-button ">Election 2020</a>
+
+            <a href="wh.html" onclick="w3_close()" class="w3-bar-item w3-button ">Trump</a>
+
+            <a href="us_news.html" onclick="w3_close()" class="w3-bar-item w3-button">National</a>
+            <a href="world_news.html" onclick="w3_close()" class="w3-bar-item w3-button">World</a>
+            <hr>    
+            <a id="accBtnSO" onclick="w3_close_SI()" class="w3-bar-item w3-button boldFont">Sign In</a>
+
+        </nav>
+
+        <!-- Header with full-height image -->
+        <header class=" w3-bar-block w3-grayscale-min" id="home">
+
+
+        </header>
+
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class = "center">
+            <label class = "underText centerPic " for="University" style='text-align: center; font-size: 40px;' ><u>Submit Article</u>
+       </label>
+<br>
+            <label class='centerPic' id="yip"   style='text-align: center; font-size: 30px;' ></label>
+<br>
+                <img id="imgPic" alt="" class='centerPic'>
+<br>
+            <label  for="University" class="centerPic" style='text-align: center; font-size: 25px;'>url</label>
+            <br>
+            <input type="url" class='subText subTextBox' id="urlText" maxlength="500">
+            <br>
+
+            <label class = "underText centerPic" for="University" style='text-align: center; font-size: 25px;'>Article Description</label>
+            <br>
+            <textarea class='subText' id="txtSummary" maxlength="500"></textarea>
+
+            <br>
+            <br>
+            <!--
+            <button onclick = "writee()">send</button>z
+            -->
+            <a  id = "btt" onclick="writee()" class="w3-button w3-light-grey fullWidth " style="font-size: 30px;" >Submit URL</a>
+        </div>
+
+        <br>
+        <br>
+
+        <footer class="w3-center w3-black w3-padding-32">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+            <p>Copyright 2019</p>
+        </footer>
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+        <script id="erasable">
+                    
+    function isIE() {
+    var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+    var msie = ua.indexOf('MSIE '); // IE 10 or older
+    var trident = ua.indexOf('Trident/'); //IE 11
+
+    return (msie > 0 || trident > 0);
+}
+
+
+//function to show alert if it's IE
+function ShowIEAlert(){
+    if(isIE()){
+                    window.location = "iePage.html"
+    }
+}
+
+             var config = {
+    apiKey: "AIzaSyC78ygb5kaYfS9RVSu1KOCw-XLmyB2OuXU",
+    authDomain: "poliapp-c85e3.firebaseapp.com",
+    databaseURL: "https://poliapp-c85e3.firebaseio.com",
+    projectId: "poliapp-c85e3",
+    storageBucket: "poliapp-c85e3.appspot.com",
+    messagingSenderId: "594264278951"
+  };
+  //var res = encodeURI(uri);
+
+  firebase.initializeApp(config);
+
+            var isi = false;
+
+    window.fbAsyncInit = function() {
+      FB.init ({
+         appId      : '267503890776887',
+         xfbml      : true,
+         version    : 'v2.6'
+      });
+   };
+
+   (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+   } (document, 'script', 'facebook-jssdk'));
+
+        
+        var provider = new firebase.auth.FacebookAuthProvider();
+
+    
+    
+    
+     var profBtn = document.getElementById("profBtn");
+              var profBtn2 = document.getElementById("accBtnSO");
+
+
+
+    firebase.auth().onAuthStateChanged(firebaseUser =>
+    {
+        if(firebaseUser){
+                            profBtn.innerText = 'Sign In';
+                            profBtn2.innerText = 'Sign In';
+
+                            isi = true;
+           var user = firebase.auth().currentUser;
+            if(user!= null){
+                            profBtn.innerText = 'My Account';
+                             profBtn2.innerText = 'My Account';
+                           
+                        isi = true;
+                                   //  document.body.style.backgroundColor = "red";
+
+   
+            }
+
+        }
+        else{
+                            profBtn.innerText = 'Sign In';
+                             profBtn2.innerText = 'Sign In';
+isi = false;
+        }
+
+
+
+
+    })
+    
+    
+
+    
+    
+    
+    function gtAS(){
+      if(isi){
+            //alert("yip")
+                    window.location = "profile.html"
+
+        }
+        else{
+            
+            if (confirm('Sign in with Facebook')) {
+                       firebase.auth().signInWithPopup(provider).then(function(result) {
+                     //   document.body.style.backgroundColor = "red";
+
+      var token = result.credential.accessToken;
+      var user = result.user;
+
+       if(user!= null){
+                        isi = true;
+                    window.location = "profile.html"
+
+   
+            }
+            
+   }).catch(function(error) {
+                              // document.body.style.backgroundColor = "blue";
+
+     /* console.log(error.code);
+      console.log(error.message);
+      */
+   });
+    // Save it!
+} else {
+    // Do nothing!
+}
+ 
+            
+            
+                       // alert("SI With Facebook")
+                        
+                    
+   
+
+
+        }
+        
+    }
+    
+
+      function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+
+    }
+
+
+    function w3_close_SI() {
+
+        mySidebar.style.display = "none";
+
+        gtAS();
+    }
+
+  function timeSince(date) {
+
+  var seconds = Math.floor((new Date() - date) / 1000);
+
+  var interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
+}
+
+/*
+    function gtAS(){
+        if(isi){
+            //alert("yip")
+                    window.location = "profile.html"
+
+        }
+        else{
+            
+            if (confirm('Sign in with Facebook')) {
+                       firebase.auth().signInWithPopup(provider).then(function(result) {
+                     //   document.body.style.backgroundColor = "red";
+
+      var token = result.credential.accessToken;
+      var user = result.user;
+
+       if(user!= null){
+                        isi = true;
+                    window.location = "profile.html"
+
+   
+            }
+            
+   }).catch(function(error) {
+                              // document.body.style.backgroundColor = "blue";
+
+     /* console.log(error.code);
+      console.log(error.message);
+     
+   });
+    // Save it!
+} else {
+    // Do nothing!
+}
+ 
+            
+            
+                       // alert("SI With Facebook")
+                        
+                    
+   
+
+
+        }
+        
+    }
+*/
+
+function gtUN(){
+                window.location = "us_news.html"
+
+          }
+          function gtGlobal(){
+                window.location = "world_news.html"
+
+          }
+          function gtWhiteHouse(){
+                window.location = "wh.html"
+
+          }
+          
+          
+          
+           function gtHome() {
+                       window.location = "hometest.html"
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               var pIDfrL = ""
+                var pCATfrL = ""
+                var topicName = ""
+
+ if (location.search.match(/pvi=([^&]*)/i))
+        {
+            pIDfrL = location.search.match(/pvi=([^&]*)/i)[1];
+                      
+
+        }
+ if (location.search.match(/ct=([^&]*)/i))
+        {
+            pCATfrL = location.search.match(/ct=([^&]*)/i)[1];
+
+        }
+ if (location.search.match(/tn=([^&]*)/i))
+        {
+            var tnbi = location.search.match(/tn=([^&]*)/i)[1];
+            topicName = decodeURIComponent(tnbi)
+            document.getElementById('yip').innerText = topicName
+            
+            
+        }
+
+
+
+
+        var imgURL = ""
+
+       // var bigy = document.getElementById('ya');
+
+        //var tN2 = document.getElementById('tN');
+       // var topicPic = document.getElementById('topicPic');
+
+        // tN2.innerText = localStorage.getItem("topicName");
+
+
+
+        //  bigy.innerText = localStorage.getItem("storageName");
+       
+        //topicPic.src = topicPicLink;
+          var dbRef = firebase.database().ref().child("THOME").child(pCATfrL).child(pIDfrL);
+                      //dbRef.on('value', snap =>   bigy.innerText = snap.val());
+                   //   dbRef.on('value', snap =>   alert(snap.val().strPicSource));
+        dbRef.once('value').then(function(snapshot) {
+         // var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+                 var himgg = document.getElementById('imgPic');
+                
+
+                            himgg.src = snapshot.val().strPicURL;
+
+
+
+        });
+
+        var isi = false;
+
+        function writee() {
+
+            var user = firebase.auth().currentUser;
+            var name, email, photoUrl, uid, emailVerified;
+
+            if (user != null) {
+
+                name = user.displayName;
+                email = user.email;
+                photoUrl = user.photoURL;
+                emailVerified = user.emailVerified;
+                uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                // this value to authenticate with your backend server, if
+                // you have one. Use User.getToken() instead.
+
+
+
+
+                var txtUrl = document.getElementById('urlText').value.toString();
+                var txtR1 = document.getElementById('txtSummary').value.toString();
+
+                if (txtUrl == "") {
+                    alert("Fill out each textbox to submit");
+
+                } else if (txtR1 == "") {
+                    //   document.body.style.backgroundColor = "red";
+
+                    alert("Fill out each textbox to submit");
+                } else {
+
+                    var keyVal = firebase.database().ref().push().key;
+
+                    //  var rootRef = firebase.database().ref().child("PROPOSED_ARTICLES").child(id).child(keyVal);
+                    var rootRef = firebase.database().ref().child("PROPOSED_ARTICLES").child(pIDfrL).child(uid);
+
+                    var hisRef = firebase.database().ref().child("PROPOSED_ARTICLES_USER_HISTORY").child(uid).child(pIDfrL);
+
+
+                    var d = new Date();
+                    var timeVar = d.getTime();
+
+
+
+                    rootRef.set(
+                            {
+                                "strArticleURL": txtUrl,
+                                "proposalAuthorID": uid,
+                                "proposalAuthorName": name,
+                                "proposalTime": timeVar,
+                                "proposalTimeInverse": -timeVar,
+
+                                "rundownCount": 1,
+                                "strRundownPoint1": txtR1,
+                              
+                                "postID": keyVal,
+                                "proposalTopicName": topicName,
+                                "proposalTopicID": pIDfrL,
+                          
+
+
+                            }
+
+
+
+                    );
+
+                    hisRef.set(
+                            {
+                                "strArticleURL": txtUrl,
+                                "proposalAuthorID": uid,
+                                "proposalAuthorName": name,
+                                "proposalTime": timeVar,
+                                "proposalTimeInverse": -timeVar,
+
+                                "rundownCount": 3,
+                                "strRundownPoint1": txtR1,
+                                "strRundownPoint2": "",
+                                "strRundownPoint3": "",
+                                "strRundownPoint4": "",
+                                "strRundownPoint5": "",
+                                "strArticlePublisher": "",
+                                "strArticleTitle": "",
+                                "postID": keyVal,
+                                "proposalTopicName": topicName,
+                                "proposalTopicID": pIDfrL,
+                                "proposalStatus": "PENDING",
+                                "proposalStatusDescription": "Awaiting Review"
+
+
+                            }
+
+                        , function(error) {
+                            if (error) {
+                            } else {
+                              
+              alert("Submission Successful!");
+
+                   window.history.back();
+            // Data saved successfully!
+                            }
+                          }
+
+                    );
+            
+            // document.body.style.backgroundColor = "red";
+            
+                   // alert("Submission Successful!");
+
+                  //  window.history.back();
+
+
+
+
+                }
+            } else {
+
+                alert("Sign in to submit an article ");
+
+
+
+            }
+        }
+
+
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+    // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+
+        function gtAS() {
+            if (isi) {
+                //alert("yip")
+                window.location = "profile.html"
+
+            } else {
+
+                if (confirm('Sign in with Facebook')) {
+                    firebase.auth().signInWithPopup(provider).then(function (result) {
+                        //   document.body.style.backgroundColor = "red";
+
+                        var token = result.credential.accessToken;
+                        var user = result.user;
+
+                        if (user != null) {
+                            isi = true;
+                            window.location = "profile.html"
+
+
+                        }
+
+                    }).catch(function (error) {
+                        // document.body.style.backgroundColor = "blue";
+
+                        /* console.log(error.code);
+                         console.log(error.message);
+                         */
+                    });
+                    // Save it!
+                } else {
+                    // Do nothing!
+                }
+
+
+
+                // alert("SI With Facebook")
+
+
+
+
+
+            }
+
+        }
+
+
+        function gtUN() {
+            window.location = "us_news.html"
+
+        }
+        function gtGlobal() {
+            window.location = "world_news.html"
+
+        }
+        function gtWhiteHouse() {
+            window.location = "wh.html"
+
+        }
+
+        firebase.auth().onAuthStateChanged(firebaseUser =>
+        {
+            if (firebaseUser) {
+                // profBtn.innerText = 'Sign In';
+                //profBtn2.innerText = 'Sign In';
+
+                isi = true;
+                var user = firebase.auth().currentUser;
+                if (user != null) {
+                    profBtn.innerText = 'My Account';
+                    profBtn2.innerText = 'My Account';
+
+                    isi = true;
+
+
+                }
+
+            } else {
+                profBtn.innerText = 'Sign In';
+                profBtn2.innerText = 'Sign In';
+                isi = false;
+            }
+
+
+
+
+        })
+                document.getElementById('erasable').innerHTML = "";
+
+        </script>
+
+
+
+    </body>
+
+</html>

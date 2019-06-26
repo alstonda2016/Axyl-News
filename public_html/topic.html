@@ -1,0 +1,1917 @@
+        <!DOCTYPE html>
+        <!--
+        To change this license header, choose License Headers in Project Properties.
+        To change this template file, choose Tools | Templates
+        and open the template in the editor.
+        -->
+        <!DOCTYPE html>
+        <html>
+            <title>Axyl News-Breaking News from all the Top News Sites</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="See every side of the the latest breaking news by reading what all the top news sites are saying in one place">
+            <meta name="keywords" content="news,bipartisan,axyl,democrat,republican, fair, breaking news, trump, obama">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta property="og:image" itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/poliapp-c85e3.appspot.com/o/sitefiles%2Fwicon.png?alt=media&token=c60dd78d-33ff-4c76-a7cd-302b50ab63e9">
+            <link rel="shortcut icon" href="alIcon.png">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+            <link rel="stylesheet" href="css/des.css">  
+            <style>
+                .boldFont{
+    font-weight: 500;
+
+}
+.boldestFont{
+    font-weight: 700;
+
+}
+                
+            </style>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132770311-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132770311-1');
+</script>
+
+
+            <body>
+
+                <!-- Navbar (sit on top) -->
+                <div class="w3-top" >
+                    <div class="w3-bar w3-white w3-card" id="myNavbar" >
+                        <!--  <a href="hometest.html" class="w3-bar-item w3-button w3-wide">AXYL</a> -->
+
+
+
+                        <!--   <img width="237" height="60" class="pull-left w3-bar-item  w3-wide" onclick="gtHome()" alt="sample-image" src="anl1.png">  -->
+                        <a href="index.html">
+                            <img src="al5.png"
+                                 width="200" height="60" class="pull-left w3-bar-item  w3-wide"
+                                 >
+                        </a>
+
+
+                        <!-- Right-sided navbar links -->
+                        <div class="w3-right w3-hide-small w3-hide-medium">
+                                   <a href="el.html"  class=" w3-bar-item w3-button ">Election 2020</a>	
+
+                                               <a href="wh.html"  class=" w3-bar-item w3-button ">Trump</a>	
+
+                            <a href="us_news.html" title="" class=" w3-bar-item w3-button">National</a>
+                            <a href="world_news.html" title=""  class=" w3-bar-item w3-button">World</a>
+                            <!--  <a href="profile.html"  class="w3-bar-item w3-button">Election 2020</a> -->	
+                            <a  id="profBtn" onclick="gtAS()" class="w3-bar-item w3-button thickBorder boldFont">  </a>										
+
+                            <!--    <a href="hometest.html"  class="w3-bar-item w3-button">test</a> -->
+                            <!--
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                            -->
+                        </div>
+                        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
+                            <i class="fa fa-bars"></i>
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sidebar on small screens when clicking the menu icon -->
+                <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left  w3-hide-large" style="display:none" id="mySidebar">
+                    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 redText " >X</a>
+                    <!--   <img src="Group.png" width="20" height="20" class='centerTabImage'> -->
+                    <a href="el.html" onclick="w3_close()" class="w3-bar-item w3-button ">Election 2020</a>
+
+                    <a href="wh.html" onclick="w3_close()" class="w3-bar-item w3-button ">Trump</a>
+
+                    <a href="us_news.html" onclick="w3_close()" class="w3-bar-item w3-button">National</a>
+                    <a href="world_news.html" onclick="w3_close()" class="w3-bar-item w3-button">World</a>
+                    <hr>    
+                    <a id="accBtnSO" onclick="w3_close_SI()" class="w3-bar-item w3-button boldFont">Sign In</a>
+
+                </nav>
+
+                <!-- Header with full-height image -->
+                <header class=" w3-bar-block w3-grayscale-min" id="home">
+
+
+                </header>
+
+
+
+                <!-- Modal for full size images on click-->
+                <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+                    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <img id="img01" class="w3-image">
+                        <p id="caption" class="w3-opacity w3-large"></p>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+
+
+                <!--  <div class='shorterWidth'> -->
+                <h1 id="tN" class="boldestFont undrlne padFromLeft" style=" float:left; "></h1>
+
+
+
+
+
+                <!--  </div> -->
+                <br>
+                        <div id="ldrTop" class="loader center" style="  "></div>
+
+                <!--
+               <hr><div class="w3-row ">
+                   <h3>'+childData.articlePublisher+'</h3>
+                   <div class="w3-third w3-container"><img src="'+childData.strPicURL+'" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">
+                   </div><div class="w3-twothird w3-container"><p>'+datey+' ago</p>
+                       <h3 class="boldFont">'+childData.strArticleHeadline+'</h3>
+                       <p>'+childData.strArticleAuthor+'</p></div></div>
+                -->
+                <div class="w3-row centerDiv ">
+                    <h1 id="tN" class="boldFont " style=" float:left; visibility: hidden;"></h1>
+                    <div class="w3-third w3-container">
+                        <h5 class="boldFont boldestFont" id="rd1" style="word-wrap: break-word;"></h5>
+                        <hr id="hrTitle1" style=" visibility: hidden;">
+                        <h5 class="boldFont boldestFont" id="rd2" style="word-wrap: break-word;"></h5>
+                        <hr id="hrTitle2" style=" visibility: hidden;">
+
+                        <h5 class="boldFont boldestFont" id="rd3" style="word-wrap: break-word;" ></h5>
+                    </div>
+
+                    <div class="w3-twothird w3-container"  style="padding:20px; padding-left:130px; position:relative;">
+                        
+                        
+                        
+                    
+                        
+                        <img src="" id="hImg" width="500" height="200"  class="pull-left w3-bar-item  w3-wide fillwidthy w3-hide-small ">
+                       <p id="picSource" style="position:absolute; color: #FFFFFF;
+    bottom:0; width: 100%; padding-left:4px" ></p> 
+                    </div></div>
+
+
+                
+                
+                
+                
+                
+              <!--       <div class="w3-row centerDiv ">
+                    <h1 id="tN" class="boldFont " style=" float:left;"></h1>
+                    <div class="w3-half w3-container" style=" float:left;">
+                                   <h1 id="lblLeftView" class="boldFont undrlneLeftView " style=" float:left;  visibility: hidden;">The Left's View</h1> 
+                        <h5 class="boldFont " id="rd1L" style="word-wrap: break-word;"></h5>
+                        <h5 class="boldFont " id="rd2L" style="word-wrap: break-word; float:right;"></h5>
+                   
+                    </div>
+            
+                        <div class="w3-half w3-container" style=" float:right;">
+                        <h1 id="lblRightView" class="boldFont undrlneRightView " style=" text-align: right;  visibility: hidden;">The Right's View</h1>
+
+                        <h5 class="boldFont " id="rd1C" style="word-wrap: break-word;"></h5>
+                        <h5 class="boldFont " id="rd2C" style="word-wrap: break-word; float:right;"></h5>
+
+                    </div>
+
+                  </div>
+               -->
+               
+            
+
+             
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+             <!--   <div class="dropdown padFromLeft">
+                    Show<button id="btnArticleSortCategory" class="dropbtn">All ▾</button>
+                    <div class="dropdown-content">
+                        <a id="btnShowAllArticles" onclick="showAllArticles()">All</a>
+                        <a id="btnShowConservativeArticles" onclick="showConservativeArticles()">Conservative</a>
+                        <a id="btnShowLiberalArticles" onclick="showLiberalArticles()">Liberal</a>
+                    </div>
+                </div>
+                -->
+                
+                
+                
+               <!-- <h2 class="undrlne boldestFont" id="quoteTitle" style=" padding-left: 10px; visibility: hidden; ">Important Quotes</h2>         
+       
+               
+                <ul id="quotesList">
+                </ul>     
+                -->
+                
+                
+                
+                
+                
+                
+                
+                
+       <h2 class="undrlne boldestFont" id="articleTitle" style=" padding-left: 10px; visibility: hidden;">Articles</h2>         
+       <div class="dropdown padFromLeft" id="dropDownT" style="visibility: hidden;">
+          Show<button id="btnArticleSortCategory" onclick="myDropFunction()" class="dropbtn">All▾</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a id="btnShowAllArticles" onclick="showAllArticles()">All</a>
+            <a id="btnShowConservativeArticles" onclick="showConservativeArticles()">Conservative</a>
+            <a id="btnShowCentrist" onclick="showCentristArticles()">Centrist</a>
+
+            <a id="btnShowLiberalArticles" onclick="showLiberalArticles()">Liberal</a>
+          </div>
+        </div>
+                <ul id="friendsList">
+                </ul>
+                        <div id="ldrP" class="loader center" style="  visibility: hidden;"></div>
+       <h2 class="undrlne boldestFont" id="wdytTitle" style=" padding-left: 10px; visibility: hidden;">What do you think?</h2>         
+
+                <div class="centerDiv ">
+                    <textarea placeholder="Post a comment" id="texty" style=" height:120px; visibility: hidden;"  maxlength="500" ></textarea>
+                    <button onclick = "writee()"  id="postBtnT"  class="btnSubButton boldFont " style="float:right; visibility: hidden;" >Post</button>
+                </div>
+                <br>
+                <br>
+                <button onclick="sa()" id="sa" class="topicBtn" style="float:right; visibility: hidden;">Want to add to the story? <u>submit article</u></button>
+                <br>
+
+               <!-- <hr> -->
+
+               <div  class="w3-row " id="btmDiv" style="visibility: hidden">
+                                                                                          <button onclick = "reload()" class="topicBtn"  style="float:right; font-size: 15px;  font-weight: normal;  padding-right: 20px; "><u>reload</u></button>
+<h3 style="font-size: 30px; " class="boldFont toplneArticle h3BottomNoPadding">Discussion</h3>
+                                                                     <!-- <button onclick = "reload()" class="topicBtn"  style="float:right; font-size: 15px;  font-weight: normal;  padding-right: 20px; "><u>reload</u></button> -->
+
+                    <hr class=" hrLowHeight"><div class="w3-twothird w3-container"></div>
+
+                    <div style="width: 100%"> 
+                    
+                    </div>
+          
+                    
+                    
+                </div>
+
+                
+                
+              <!--  <div class="chat-footer  " style="font-size: 30px;   font-weight: bold;  padding-left: 20px;" >Discussion
+
+                    <button onclick = "reload()" class="topicBtn"  style="float:right; font-size: 15px;  font-weight: normal;  padding-right: 20px; "><u>reload</u></button>
+                </div>
+                <hr>
+                
+                -->
+                <!--  <ul class="scrollable-content" id="discussionList">
+                  </ul>
+                -->
+                <div id="chatdiv" class=".chat-dialog-window  shorterWidth">
+
+
+
+                    <ul id="discussionList">
+
+                    </ul>
+                    <div id="ldr" class="loader center"></div>
+
+                    <br>
+                </div>
+
+
+
+                <footer class="w3-center w3-black w3-padding-32">
+                    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+                    <p>Copyright 2019</p>
+                </footer>   
+
+
+                <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+                <script id="erasable">
+                    /* 
+         * To change this license header, choose License Headers in Project Properties.
+         * To change this template file, choose Tools | Templates
+         * and open the template in the editor.
+         */
+
+
+
+            function isIE() {
+            var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+            var msie = ua.indexOf('MSIE '); // IE 10 or older
+            var trident = ua.indexOf('Trident/'); //IE 11
+
+            return (msie > 0 || trident > 0);
+        }
+
+
+        //function to show alert if it's IE
+        function ShowIEAlert(){
+            if(isIE()){
+                            window.location = "iePage.html"
+            }
+        }
+
+          var isIE = /Trident/.test(navigator.userAgent) || /MSIE/.test(navigator.userAgent);
+        if(isIE){
+                                window.location = "iePage.html"
+        }
+
+
+
+            function openInNewTab(url) {
+          var win = window.open(url, '_blank');
+          win.focus();
+
+
+        }
+
+         var config = {
+            apiKey: "AIzaSyC78ygb5kaYfS9RVSu1KOCw-XLmyB2OuXU",
+            authDomain: "poliapp-c85e3.firebaseapp.com",
+            databaseURL: "https://poliapp-c85e3.firebaseio.com",
+            projectId: "poliapp-c85e3",
+            storageBucket: "poliapp-c85e3.appspot.com",
+            messagingSenderId: "594264278951"
+          };
+          //var res = encodeURI(uri);
+
+          firebase.initializeApp(config);
+
+                    var isi = false;
+
+            window.fbAsyncInit = function() {
+              FB.init ({
+                 appId      : '267503890776887',
+                 xfbml      : true,
+                 version    : 'v2.6'
+              });
+           };
+
+           (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) {return;}
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js";
+              fjs.parentNode.insertBefore(js, fjs);
+           } (document, 'script', 'facebook-jssdk'));
+
+
+                var provider = new firebase.auth.FacebookAuthProvider();
+
+
+
+
+             var profBtn = document.getElementById("profBtn");
+                      var profBtn2 = document.getElementById("accBtnSO");
+
+
+
+            firebase.auth().onAuthStateChanged(firebaseUser =>
+            {
+                if(firebaseUser){
+                                    profBtn.innerText = 'Sign In';
+                                    profBtn2.innerText = 'Sign In';
+
+                                    isi = true;
+                   var user = firebase.auth().currentUser;
+                    if(user!= null){
+                                    profBtn.innerText = 'My Account';
+                                     profBtn2.innerText = 'My Account';
+
+                                isi = true;
+                                           //  document.body.style.backgroundColor = "red";
+
+
+                    }
+
+                }
+                else{
+                                    profBtn.innerText = 'Sign In';
+                                     profBtn2.innerText = 'Sign In';
+        isi = false;
+                }
+
+
+
+
+            })
+
+
+
+
+
+
+            function gtAS(){
+              if(isi){
+                    //alert("yip")
+                            window.location = "profile.html"
+
+                }
+                else{
+
+                    if (confirm('Sign in with Facebook')) {
+                               firebase.auth().signInWithPopup(provider).then(function(result) {
+                             //   document.body.style.backgroundColor = "red";
+
+              var token = result.credential.accessToken;
+              var user = result.user;
+
+               if(user!= null){
+                                isi = true;
+                                profBtn.innerText = 'My Account';
+                                     profBtn2.innerText = 'My Account';
+                            //window.location = "profile.html"
+
+
+                    }
+
+           }).catch(function(error) {
+                                      // document.body.style.backgroundColor = "blue";
+
+             /* console.log(error.code);
+              console.log(error.message);
+              */
+           });
+            // Save it!
+        } else {
+            // Do nothing!
+        }
+
+
+
+                               // alert("SI With Facebook")
+
+
+
+
+
+                }
+
+            }
+
+
+              function onClick(element) {
+              document.getElementById("img01").src = element.src;
+              document.getElementById("modal01").style.display = "block";
+              var captionText = document.getElementById("caption");
+              captionText.innerHTML = element.alt;
+            }
+
+function gtSite(i) {
+ var win = window.open(i, '_blank');
+                                    win.focus();    
+    
+    
+}
+
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+
+              if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+              } else {
+                mySidebar.style.display = 'block';
+              }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+
+            }
+
+
+            function w3_close_SI() {
+
+                mySidebar.style.display = "none";
+
+                gtAS();
+            }
+
+          function timeSince(date) {
+
+          var seconds = Math.floor((new Date() - date) / 1000);
+
+          var interval = Math.floor(seconds / 31536000);
+
+          if (interval > 1) {
+            return interval + " years";
+          }
+          interval = Math.floor(seconds / 2592000);
+          if (interval > 1) {
+            return interval + " months";
+          }
+          interval = Math.floor(seconds / 86400);
+          if (interval > 1) {
+            return interval + " days";
+          }
+          interval = Math.floor(seconds / 3600);
+          if (interval > 1) {
+            return interval + " hours";
+          }
+          interval = Math.floor(seconds / 60);
+          if (interval > 1) {
+            return interval + " minutes";
+          }
+          return Math.floor(seconds) + " seconds";
+        }
+
+        /*
+            function gtAS(){
+                if(isi){
+                    //alert("yip")
+                            window.location = "profile.html"
+
+                }
+                else{
+
+                    if (confirm('Sign in with Facebook')) {
+                               firebase.auth().signInWithPopup(provider).then(function(result) {
+                             //   document.body.style.backgroundColor = "red";
+
+              var token = result.credential.accessToken;
+              var user = result.user;
+
+               if(user!= null){
+                                isi = true;
+                            window.location = "profile.html"
+
+
+                    }
+
+           }).catch(function(error) {
+                                      // document.body.style.backgroundColor = "blue";
+
+             /* console.log(error.code);
+              console.log(error.message);
+
+           });
+            // Save it!
+        } else {
+            // Do nothing!
+        }
+
+
+
+                               // alert("SI With Facebook")
+
+
+
+
+
+                }
+
+            }
+        */
+
+        function gtUN(){
+                        window.location = "us_news.html"
+
+                  }
+                  function gtGlobal(){
+                        window.location = "world_news.html"
+
+                  }
+                  function gtWhiteHouse(){
+                        window.location = "wh.html"
+
+                  }
+
+
+
+                   function gtHome() {
+                               window.location = "hometest.html"
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+         var ldrV = document.getElementById("ldr");
+                                            ldrV.style.visibility = "visible"
+
+
+
+
+                        // Initialize Firebase
+                        var pIDfrL = ""
+                        var pCATfrL = ""
+                        var topicName = "";
+                        var articles = {};
+                        var quotes = {};
+
+         if (location.search.match(/pvi=([^&]*)/i))
+                {
+                    pIDfrL = location.search.match(/pvi=([^&]*)/i)[1];
+
+
+                }
+         if (location.search.match(/ct=([^&]*)/i))
+                {
+                    pCATfrL = location.search.match(/ct=([^&]*)/i)[1];
+
+                }
+
+
+                        var imgURL = ""
+                        //var provider = new firebase.auth.FacebookAuthProvider();
+
+
+
+                        // var bigy = document.getElementById('ya');
+
+                        var dbRef = firebase.database().ref().child("THOME").child(pCATfrL).child(pIDfrL);
+                      //dbRef.on('value', snap =>   bigy.innerText = snap.val());
+                   //   dbRef.on('value', snap =>   alert(snap.val().strPicSource));
+        dbRef.once('value').then(function(snapshot) {
+         // var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+                 var rd1 = document.getElementById('rd1');
+                        var rd2 = document.getElementById('rd2');
+                        var rd3 = document.getElementById('rd3');
+                        
+                     /*   var rd1L = document.getElementById('rd1L');
+                        var rd2L = document.getElementById('rd2L');
+                        var rd1C = document.getElementById('rd1C');
+                        var rd2C = document.getElementById('rd2C');
+                        */
+                   
+                        /*
+                        document.getElementById('lblRightView').style.visibility = "visible"
+                        document.getElementById('lblLeftView').style.visibility = "visible"
+                        */
+                        
+                         var picSource = document.getElementById('picSource');
+                         picSource.innerText = "Pic Credits | "+ snapshot.val().strPicSource;
+
+           var tN2 = document.getElementById('tN');
+             var himgg = document.getElementById('hImg');
+
+                            himgg.src = snapshot.val().strPicURL;
+
+                      tN2.innerText = snapshot.val().topicName;
+                      topicName = snapshot.val().topicName;
+                        rd1.innerText = "‣" + snapshot.val().strRundownPoint1;
+                        rd2.innerText = "‣" + snapshot.val().strRundownPoint2;
+                        rd3.innerText = "‣" + snapshot.val().strRundownPoint3;
+/*
+                        rd1L.innerText = "\"" + snapshot.val().liberalStrRundownPoint1 + "\"";
+                        rd2L.innerText = "-"+ snapshot.val().liberalStrRundownPoint2;
+                        rd1C.innerText = "\"" + snapshot.val().conservativeStrRundownPoint1+ "\"";
+                        rd2C.innerText = "-"+  snapshot.val().conservativeStrRundownPoint2;
+
+*/
+
+                        document.getElementById('tN').style.visibility = "visible"
+                        document.getElementById('hrTitle1').style.visibility = "visible"
+                        document.getElementById('hrTitle2').style.visibility = "visible"
+                        //document.getElementById('quoteTitle').style.visibility = "visible"
+                        document.getElementById('articleTitle').style.visibility = "visible"
+                        document.getElementById('dropDownT').style.visibility = "visible"
+                        document.getElementById('wdytTitle').style.visibility = "visible"
+                        document.getElementById('texty').style.visibility = "visible"
+                        document.getElementById('postBtnT').style.visibility = "visible"
+                        document.getElementById('sa').style.visibility = "visible"
+                        document.getElementById('btmDiv').style.visibility = "visible"
+                        document.getElementById('ldrTop').style.display = "none"
+
+
+        
+                        articles = snapshot.val().lstArticles;
+                         quotes = snapshot.val().quoteMap;
+
+                         if(!snapshot.val().isActive){
+                             alert("This story was removed")
+
+                                                 window.history.back();
+
+
+                         }
+
+
+/*
+
+ Object.keys(quotes).forEach(function(key) {
+    
+
+                   var childData = quotes[key];
+
+                               // var ul = document.getElementById("quotesList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                      // document.body.style.backgroundColor = "blue";
+
+
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                
+        
+        //div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                 
+                //div.innerHTML = ' <hr> <h3>'+childData.quote +' <h3><hr>'
+         
+         div.innerHTML = '<div class=" w3-container toplneArticle" ><h5 class="boldFont " id="rd1C" style="word-wrap: break-word;"> '+childData.quote +' </h5><h5 class="boldFont " id="rd2C" style="word-wrap: break-word; float:right;">'+childData.author +' </h5></div>'
+         
+         
+       
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+
+
+        });
+*/
+
+
+
+                         Object.keys(articles).forEach(function(key) {
+            /*value = map[key];
+            console.log(value);*/
+
+                   var childData = articles[key];
+
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[key].strURL;
+
+                      // document.body.style.backgroundColor = "blue";
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                 
+        
+        // div.onclick = rickity(articles[ll].strURL );
+                    /*  var urll = childData.strURL;
+
+        div.addEventListener('click',function (event) {
+                    // do something
+
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+                });
+                    */
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+
+
+        });
+
+        /*
+                        for(var ll = 0; ll < articles.length; ll++){
+                               //  document.body.style.backgroundColor = "blue";
+
+                            var childData = articles[ll];
+
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[ll].strURL;
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                 // div.onclick = rickity(articles[ll].strURL );
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+                        }
+
+                        */
+
+
+        //alert(snapshot.val().strPicSource)
+        });
+
+
+
+                        // bigy.innerText = "ldfg";
+
+
+                       // var id = localStorage.getItem("storageName");
+                       // var topicName = localStorage.getItem("topicName");
+                        var isi = false;
+                        var imgurl = "";
+
+                        //  bigy.innerText = localStorage.getItem("storageName");
+
+        /*
+                        var tN2 = document.getElementById('tN');
+                        tN2.innerText = localStorage.getItem("topicName");
+
+
+
+                        var rd1 = document.getElementById('rd1');
+                        var rd2 = document.getElementById('rd2');
+                        var rd3 = document.getElementById('rd3');
+
+                        rd1.innerText = "‣" + localStorage.getItem("rd1");
+                        rd2.innerText = "‣" + localStorage.getItem("rd2");
+                        rd3.innerText = "‣" + localStorage.getItem("rd3");
+
+        */
+        /*
+                        var ref = firebase.database().ref().child('ARTICLES').child(id);
+                        ref.once('value', function (snapshot) {
+                            snapshot.forEach(function (childSnapshot) {
+                                var childKey = childSnapshot.key;
+                                var childData = childSnapshot.val();
+
+                                // bigy.innerText = childKey;
+
+
+
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                                div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'       
+
+                                div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+                            });
+
+                            var himgg = document.getElementById('hImg');
+
+                            himgg.src = imgURL;
+
+                        });
+        */
+
+
+
+
+
+
+                        var ref = firebase.database().ref().child('CHATS').child(pIDfrL).orderByChild('postTime');
+                        ref.once('value', function (snapshot) {
+                             var ldrV = document.getElementById("ldr");
+                                            ldrV.style.visibility = "hidden"
+
+                            snapshot.forEach(function (childSnapshot) {
+                                var childKey = childSnapshot.key;
+                                var childData = childSnapshot.val();
+
+                                // bigy.innerText = childKey;
+
+          if( childData.postIsActive)
+                                       {
+
+                                var ul = document.getElementById("discussionList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                g.style.height = "50";
+
+
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                                div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+
+
+                                var time = childData.postTime;
+                                //var datey = new Date(time);
+
+                                var dati = timeSince(new Date(time));
+
+
+                                div.innerHTML =
+                                        '<label> ' + dati + ' ago </label>\<br>\<h5> ' + childData.creatorName + ' </h5>\<h3 style="word-wrap: break-word;" > ' + childData.postText + ' </h3>\<hr>';
+
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+                                       }
+
+                            });
+
+
+
+                        });
+
+
+
+
+
+                        function writee() {
+                            //rootRef.set(writee);
+                            //document.body.style.backgroundColor = "black";
+                            var pix = document.getElementById('texty').value.toString();
+                            var keyVal = firebase.database().ref().push().key;
+                            var rootRef = firebase.database().ref().child("CHATS").child(pIDfrL).child(keyVal);
+
+                            var heeh = rootRef.push().key;
+
+                            var d = new Date();
+                            var n = d.getTime();
+                            var textbox = document.getElementById('texty')
+                            textbox.value = ""
+                            var ya = pix.replace(/\s+/g, '')
+                            if (ya.length == 0 ) {
+
+                                alert("Enter text before posting");
+                            } else {
+                                var user = firebase.auth().currentUser;
+                                var name, email, photoUrl, uid, emailVerified;
+
+                                if (user != null) {
+                                    //document.body.style.backgroundColor = "green";
+
+                                    name = user.displayName;
+                                    email = user.email;
+                                    photoUrl = user.photoURL;
+                                    emailVerified = user.emailVerified;
+                                    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                                    // this value to authenticate with your backend server, if
+                                    // you have one. Use User.getToken() instead.
+
+
+
+
+
+
+                                    rootRef.set(
+                                            {
+                                                "postCreatorID": uid,
+                                                "postText": pix,
+                                                "postID": keyVal,
+
+                                                "postTime": n,
+                                                "postTimeInverse": -n,
+                                                "postUserName": name,
+                                                "postType": "CHAT_IOS",
+                                                "postDescription": "NONE",
+                                                "creatorName": name,
+                                                "ratingBlend": 0,
+                                                "textCount": 0,
+                                                "replyCount": 0,
+
+                                                "postVisibilityStartTime": 0,
+                                                "postVisibilityEndTime": 0,
+                                                "postIsActive": true,
+                                                "postIsFlagged": false,
+                                                "originalTopicID": pIDfrL,
+                                                "chatVersionType": 1,
+                                                "postMediaLink": "none"
+
+
+                                            }
+
+
+
+                                    );
+                           /*  var ldrV = document.getElementById("ldr");
+                                            ldrV.style.visibility = "visible"
+                                            */
+                                           // reload()
+
+                                    var ul = document.getElementById("discussionList");
+                                    var li = document.createElement('li');
+                                    var g = document.createElement('div');
+                                    var div = document.createElement('div');
+
+                                    div.className = 'row';
+
+                                    var datey = timeSince(new Date(n));
+
+                                    div.innerHTML =
+                                        '<label> ' + datey + ' ago </label>\<br>\<h5> ' + name + ' </h5>\<h3 style="word-wrap: break-word;" > ' + pix + ' </h3>\<hr>';
+
+
+                                    //  document.body.style.backgroundColor = "green";
+
+
+                                    //document.getElementById('content').appendChild(div);
+                                    li.appendChild(div);
+
+                                    //li.appendChild(document.createTextNode(childData.topicName));
+                                  //  ul.appendChild(li);
+                                    ul.appendChild(li);
+
+        var objDiv = document.getElementById("discussionList");
+        //objDiv.scrollTop = objDiv.scrollTopMax;
+           objDiv.scrollIntoView(false);
+
+
+                                 /*
+         var ref = firebase.database().ref().child('CHATS').child(pIDfrL);
+                            ref.once('value', function (snapshot) {
+                                 var ldrV = document.getElementById("ldr");
+                                            ldrV.style.visibility = "hidden"
+                                snapshot.forEach(function (childSnapshot) {
+                                    var childKey = childSnapshot.key;
+                                    var childData = childSnapshot.val();
+
+                                    //  bigy.innerText = childKey;
+
+                                       if( childData.postIsActive)
+                                       {
+
+                                    //  var ul = document.getElementById("discussionList");
+                                    var li = document.createElement('li');
+                                    var g = document.createElement('div');
+                                    //g.setAttribute("123", "Div1");
+                                    g.style.height = "50";
+
+
+
+                                    li.appendChild(g);
+
+                                    var div = document.createElement('div');
+
+                                    div.className = 'row';
+
+                                    div.onclick = function () {
+                                        // alert(this.innerHTML);
+                                        var urll = childData.strURL;
+                                        var win = window.open(urll, '_blank');
+                                        win.focus();
+
+
+
+
+
+
+                                    };
+
+
+                                    var time = childData.postTime;
+                                    //var datey = new Date(time);
+
+                                    var dati = timeSince(new Date(time))
+                                    div.innerHTML =
+                                        '<label> ' + dati + ' ago </label>\<br>\<label> ' + childData.creatorName + ' </label>\<br>\<h3 style="word-wrap: break-word;" > ' + childData.postText + ' </h3>\<hr>';
+
+
+
+                                    //document.getElementById('content').appendChild(div);
+                                    li.appendChild(div);
+
+                                    //li.appendChild(document.createTextNode(childData.topicName));
+                                    ul.appendChild(li);
+
+                                       }
+                                });
+
+
+        var objDiv = document.getElementById("discussionList");
+        objDiv.scrollTop = objDiv.scrollHeight;
+                            });
+
+        */
+
+
+
+
+                                } else {
+
+                                    alert("Sign in to comment ");
+
+
+                                }
+                            }
+
+                        }
+
+
+                        function reload() {
+                            var ul = document.getElementById("discussionList");
+
+                            ul.innerHTML = '';
+
+        //                    var ref = firebase.database().ref().child('CHATS').child(pIDfrL).orderByChild('postTimeInverse');
+
+                            var ref = firebase.database().ref().child('CHATS').child(pIDfrL).orderByChild('postTime');
+                            ref.once('value', function (snapshot) {
+                                 var ldrV = document.getElementById("ldr");
+                                            ldrV.style.visibility = "hidden"
+                                snapshot.forEach(function (childSnapshot) {
+                                    var childKey = childSnapshot.key;
+                                    var childData = childSnapshot.val();
+
+                                    //  bigy.innerText = childKey;
+
+                                       if( childData.postIsActive)
+                                       {
+
+                                    //  var ul = document.getElementById("discussionList");
+                                    var li = document.createElement('li');
+                                    var g = document.createElement('div');
+                                    //g.setAttribute("123", "Div1");
+                                    g.style.height = "50";
+
+
+
+                                    li.appendChild(g);
+
+                                    var div = document.createElement('div');
+
+                                    div.className = 'row';
+
+                                    div.onclick = function () {
+                                        // alert(this.innerHTML);
+                                        var urll = childData.strURL;
+                                        var win = window.open(urll, '_blank');
+                                        win.focus();
+
+
+
+
+
+
+                                    };
+
+
+                                    var time = childData.postTime;
+                                    //var datey = new Date(time);
+
+                                    var dati = timeSince(new Date(time))
+                                    div.innerHTML =
+                                        '<label> ' + dati + ' ago </label>\<br>\<h5> ' + childData.creatorName + ' </h5>\<h3 style="word-wrap: break-word;" > ' + childData.postText + ' </h3>\<hr>';
+
+
+
+                                    //document.getElementById('content').appendChild(div);
+                                    li.appendChild(div);
+
+                                    //li.appendChild(document.createTextNode(childData.topicName));
+                                    ul.appendChild(li);
+
+                                       }
+                                });
+
+
+
+                            });
+
+
+                        }
+
+                        function sa() {
+                            // var getInput = prompt("Hey type something here: ");
+                           /* localStorage.setItem("storageName", id);
+                            localStorage.setItem("topicName", topicName);
+                            localStorage.setItem("topicPic", imgURL);
+        */
+                            //window.location = "www.example.com"
+
+                                var topNam = encodeURIComponent(topicName);
+                                var uri = 'submit-article.html?pvi='+pIDfrL+'&ct='+pCATfrL+'&tn='+topNam;
+
+                             window.location = uri
+
+
+
+
+                        }
+
+
+
+
+
+
+        function showAllArticles(){
+               document.getElementById('btnArticleSortCategory').innerText = "All ▾";
+
+            document.getElementById('friendsList').innerHTML = "";
+            var ldrP = document.getElementById("ldrP");
+           ldrP.style.visibility = "visible"
+
+            setTimeout(function() { 
+                   ldrP.style.visibility = "hidden"
+
+
+
+
+                    Object.keys(articles).forEach(function(key) {
+            /*value = map[key];
+            console.log(value);*/
+
+                   var childData = articles[key];
+
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[key].strURL;
+
+                      // document.body.style.backgroundColor = "blue";
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                 // div.onclick = rickity(articles[ll].strURL );
+                    /*  var urll = childData.strURL;
+
+        div.addEventListener('click',function (event) {
+                    // do something
+
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+                });
+                    */
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+
+
+        });
+
+
+
+        /*
+                for(var ll = 0; ll < articles.length; ll++){
+                             // document.body.style.backgroundColor = "white";
+
+                            var childData = articles[ll];
+
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                           /*     div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'       
+
+                              //  div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+                      } 
+
+            */
+
+            }, 500);
+
+
+        }
+        function showConservativeArticles(){
+
+               document.getElementById('btnArticleSortCategory').innerText = "Conservative ▾";
+
+             document.getElementById('friendsList').innerHTML = "";
+
+             var ldrP = document.getElementById("ldrP");
+           ldrP.style.visibility = "visible"
+
+             setTimeout(function() { 
+                    ldrP.style.visibility = "hidden"
+
+
+
+
+                    Object.keys(articles).forEach(function(key) {
+            /*value = map[key];
+            console.log(value);*/
+
+                   var childData = articles[key];
+         if(childData.articleBias < 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[key].strURL;
+
+                      // document.body.style.backgroundColor = "blue";
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                              
+          //  div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                                           div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+      
+            // div.onclick = rickity(articles[ll].strURL );
+                    /*  var urll = childData.strURL;
+
+        div.addEventListener('click',function (event) {
+                    // do something
+
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+                });
+                    */
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+                            }
+
+        });
+
+
+
+
+
+
+        /*
+                 for(var ll = 0; ll < articles.length; ll++){
+                               // document.body.style.backgroundColor = "red";
+
+                            var childData = articles[ll];
+         if(childData.articleBias < 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                            /*    div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'       
+
+                               // div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+                    }
+
+                        }
+                */    
+
+            }, 500);
+
+
+
+
+
+        }
+        
+        
+         function showCentristArticles(){
+
+               document.getElementById('btnArticleSortCategory').innerText = "Centrist ▾";
+
+             document.getElementById('friendsList').innerHTML = "";
+
+             var ldrP = document.getElementById("ldrP");
+           ldrP.style.visibility = "visible"
+
+             setTimeout(function() { 
+                    ldrP.style.visibility = "hidden"
+
+
+
+
+                    Object.keys(articles).forEach(function(key) {
+            /*value = map[key];
+            console.log(value);*/
+
+                   var childData = articles[key];
+         if(childData.articleBias == 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[key].strURL;
+
+                      // document.body.style.backgroundColor = "blue";
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                              
+          //  div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                                           div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+      
+            // div.onclick = rickity(articles[ll].strURL );
+                    /*  var urll = childData.strURL;
+
+        div.addEventListener('click',function (event) {
+                    // do something
+
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+                });
+                    */
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+                            }
+
+        });
+
+
+
+
+
+
+        /*
+                 for(var ll = 0; ll < articles.length; ll++){
+                               // document.body.style.backgroundColor = "red";
+
+                            var childData = articles[ll];
+         if(childData.articleBias < 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                            /*    div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'       
+
+                               // div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+                    }
+
+                        }
+                */    
+
+            }, 500);
+
+
+
+
+
+        }
+        
+        function showLiberalArticles(){
+
+           document.getElementById('btnArticleSortCategory').innerText = "Liberal ▾";
+
+
+             document.getElementById('friendsList').innerHTML = "";
+              var ldrP = document.getElementById("ldrP");
+           ldrP.style.visibility = "visible"
+
+
+
+            setTimeout(function() { 
+                    ldrP.style.visibility = "hidden"
+
+
+
+
+                    Object.keys(articles).forEach(function(key) {
+            /*value = map[key];
+            console.log(value);*/
+
+                   var childData = articles[key];
+         if(childData.articleBias > 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+                                var a = articles[key].strURL;
+
+                      // document.body.style.backgroundColor = "blue";
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'    style="  text-align: right; vertical-align: text-bottom;   
+
+                                //div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                             //    div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+                                                 div.innerHTML =   '<div onclick="gtSite(\''+childData.strURL+'\')" class="w3-row ">\<h3  class="boldFont toplneArticle h3BottomNoPadding">' + childData.articlePublisher + '</h3>\<hr class=" hrLowHeight">\<div class="w3-twothird w3-container">\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strArticleHeadline + '</h4>\<h6 class="allCaps">By '+childData.strArticleAuthor+'</h6>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;" href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+
+            // div.onclick = rickity(articles[ll].strURL );
+                    /*  var urll = childData.strURL;
+
+        div.addEventListener('click',function (event) {
+                    // do something
+
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+                });
+                    */
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+
+
+
+                            }
+
+        });
+
+
+
+
+
+
+        /*
+                 for(var ll = 0; ll < articles.length; ll++){
+                               // document.body.style.backgroundColor = "red";
+
+                            var childData = articles[ll];
+         if(childData.articleBias < 3)
+                            {
+                                var ul = document.getElementById("friendsList");
+                                var li = document.createElement('li');
+                                var g = document.createElement('div');
+                                //g.setAttribute("123", "Div1");
+                                g.style.height = "50";
+
+                                imgurl = childData.strPicURL;
+
+                                li.appendChild(g);
+
+                                var div = document.createElement('div');
+
+                                div.className = 'row';
+
+                            /*    div.onclick = function () {
+                                    // alert(this.innerHTML);
+                                    var urll = childData.strURL;
+                                    var win = window.open(urll, '_blank');
+                                    win.focus();
+
+
+
+
+
+
+                                };
+
+
+                                var datey = timeSince(new Date(childData.articleTime));
+
+                                imgURL = childData.strPicURL;
+
+                                //div.innerHTML =    '<hr>\<div class="w3-row">\<h3>'+childData.articlePublisher+'</h3>\<div class="w3-col s3">\<div style="width:100%">\<img src="'+childData.strPicURL+'" width="150" height="150" class="fillwidthy">\</div>\</div>\<div class="w3-col s9 w3-container">\<h3>'+childData.strArticleHeadline+'</h3>\<p>'+childData.strArticleAuthor+'</p>\<p>'+datey+'</p>\</div>\</div>'       
+
+                               // div.innerHTML = '<hr><div class="w3-row ">\<h3>' + childData.articlePublisher + '</h3>\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + datey + ' ago</p>\<h3 class="boldFont">' + childData.strArticleHeadline + '</h3>\<p>' + childData.strArticleAuthor + '</p>\</div>\</div>'
+                                 div.innerHTML =   '<div class="w3-row ">\<h3  class=" toplneArticle">' + childData.articlePublisher + '</h3>\<hr class="hrnp">\<div class="w3-twothird w3-container">\<h6>By:'+childData.strArticleAuthor+'</h6>\<h4 class="boldFont" style="word-wrap: break-word;" >' + childData.strRundownPoint1 + '</h4>\</div>\<div style="width: 100%">\ <a  style="  text-align: right; vertical-align: text-bottom; float: right; padding-right: 9px;"  href="'+childData.strURL+'" target="_blank">Click to read full article</a>\</div>\</div>'
+
+
+                                //document.getElementById('content').appendChild(div);
+                                li.appendChild(div);
+
+                                //li.appendChild(document.createTextNode(childData.topicName));
+                                ul.appendChild(li);
+
+                    }
+
+                        }
+                */    
+
+            }, 500);
+
+
+
+        }
+
+
+        function myDropFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+
+
+
+            document.getElementById('erasable').innerHTML = "";
+
+
+                </script>
+
+
+
+
+            </body>
+
+        </html>
