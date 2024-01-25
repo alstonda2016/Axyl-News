@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+                <h1 id="ya"></h1>
+
+        <div>TODO write content</div>
+        <button onclick = "facebookSignin()">Facebook Signin</button>
+                <button onclick = "ya()">two</button>
+
+    </body>
+     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+    <script>
+   var config = {
+    apiKey: "AIzaSyC78ygb5kaYfS9RVSu1KOCw-XLmyB2OuXU",
+    authDomain: "poliapp-c85e3.firebaseapp.com",
+    databaseURL: "https://poliapp-c85e3.firebaseio.com",
+    projectId: "poliapp-c85e3",
+    storageBucket: "poliapp-c85e3.appspot.com",
+    messagingSenderId: "594264278951"
+  };
+  //var res = encodeURI(uri);
+
+  firebase.initializeApp(config);
+    
+    
+    window.fbAsyncInit = function() {
+      FB.init ({
+         appId      : '267503890776887',
+         xfbml      : true,
+         version    : 'v2.6'
+      });
+   };
+
+   (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+   } (document, 'script', 'facebook-jssdk'));
+
+        
+        var provider = new firebase.auth.FacebookAuthProvider();
+
+function facebookSignin() {
+
+   firebase.auth().signInWithPopup(provider).then(function(result) {
+                        document.body.style.backgroundColor = "red";
+
+      var token = result.credential.accessToken;
+      var user = result.user;
+
+      console.log(token)
+      console.log(user)
+   }).catch(function(error) {
+                               document.body.style.backgroundColor = "blue";
+
+      console.log(error.code);
+      console.log(error.message);
+   });
+   
+
+  /*
+  firebase.auth().signInWithPopup(provider)
+  .then((result) => {
+    // Success.
+                        document.body.style.backgroundColor = "red";
+
+  }, (error) => {
+    // Error.
+                      document.body.style.backgroundColor = "red";
+
+  });
+  */
+}
+
+
+
+function ya() {
+
+   var user = firebase.auth().currentUser;
+var name, email, photoUrl, uid, emailVerified;
+
+if (user != null) {
+                                   document.body.style.backgroundColor = "green";
+
+  name = user.displayName;
+  email = user.email;
+  photoUrl = user.photoURL;
+  emailVerified = user.emailVerified;
+  uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
+                   
+                        var bigy = document.getElementById('ya');
+    bigy.innerText = name;
+}
+else{
+                                   document.body.style.backgroundColor = "black";
+
+}
+}
+</script>
+</html>

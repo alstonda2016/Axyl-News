@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" >
+      <div class="w3-bar w3-white w3-card" id="myNavbar" >
+       <a href="hometest.html" class="w3-bar-item w3-button w3-wide">AXYL</a> 
+      <!--   <img width="40" height="40" class="pull-left"  alt="sample-image" src="Group.png">  -->
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+        <a href="us_news.html" title="" class=" w3-bar-item w3-button">National</a>
+        <a href="world_news.html" title=""  class=" w3-bar-item w3-button">World</a>
+        <a href="wh.html"  class=" w3-bar-item w3-button">The White House</a>	
+        <!--  <a href="profile.html"  class="w3-bar-item w3-button">Election 2020</a> -->	
+        <a  id="profBtn" onclick="gtAS()" class="w3-bar-item w3-button thickBorder">sign in</a>										
+
+        <!--    <a href="hometest.html"  class="w3-bar-item w3-button">test</a> -->
+                                                <!--
+          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+          <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+          <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+          <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                                                -->
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="us_news.html" onclick="w3_close()" class="w3-bar-item w3-button">National</a>
+      <a href="world_news.html" onclick="w3_close()" class="w3-bar-item w3-button">World</a>
+      <a href="wh.html" onclick="w3_close()" class="w3-bar-item w3-button">The White House</a>
+      <a id="accBtnSO" onclick="w3_closew3_close_SI()" class="w3-bar-item w3-button">Account</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class=" w3-bar-block w3-grayscale-min" id="home">
+
+
+    </header>
+
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>Responsive</h3><br>
+                  <img id = "pic2" src="img_chania.jpg" alt="Flowers in Chania" width="150" height="150">
+
+     <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
+      <p>Built-in responsiveness</p>
+      <p>Mobile first fluid grid</p>
+      <p>Fits any screen sizes</p>
+      <p>PC Tablet and Mobile</p>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>Standard CSS</h3><br>
+                  <img id = "pic2" src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+     <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
+      <p>Standard CSS only</p>
+      <p>Easy to learn</p>
+      <p>No need for jQuery</p>
+      <p>No JavaScript library</p>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>Design</h3><br>
+                  <img id = "pic2" src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+      <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Paper like design</p>
+      <p>Bold colors and shadows</p>
+      <p>Equal across platforms</p>
+      <p>Equal across devices</p>
+      </div>
+    </div>
+    </div>
+    </header>
+
+
+</html>

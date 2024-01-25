@@ -1,257 +1,9 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
-<html>
-    <title>Axyl News - Breaking News from all the Top News Sites</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="See every side of the the latest breaking news by reading what all the top news sites are saying in one place">
-    <meta name="keywords" content="axyl news,us breaking news, latest news today, latestnews,news articles, new news, breaking news, trump news, obama news">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/poliapp-c85e3.appspot.com/o/sitefiles%2Fwicon.png?alt=media&token=c60dd78d-33ff-4c76-a7cd-302b50ab63e9">
-    <link rel="shortcut icon" href="alIcon.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-    <link rel="stylesheet" href="css/des.css">  
-    
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132770311-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-132770311-1');
-</script>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8896208837588928",
-    enable_page_level_ads: true
-  });
-</script>
-
-    <body>
-
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top" >
-            <div class="w3-bar w3-white w3-card" id="myNavbar" >
-                <!--  <a href="hometest.html" class="w3-bar-item w3-button w3-wide">AXYL</a> -->
-
-
-
-                <!--   <img width="237" height="60" class="pull-left w3-bar-item  w3-wide" onclick="gtHome()" alt="sample-image" src="anl1.png">  -->
-                <a href="index.html">
-                    <img src="al5.png"
-                         width="200" height="60" class="pull-left w3-bar-item  w3-wide"
-                         >
-                </a>
-
-
-                <!-- Right-sided navbar links -->
-                <div class="w3-right w3-hide-small w3-hide-medium">
-                           <a href="el.html"  class=" w3-bar-item w3-button ">Election 2020</a>	
-
-                                       <a href="wh.html"  class=" w3-bar-item w3-button ">Trump</a>	
-
-                    <a href="us_news.html" title="" class=" w3-bar-item w3-button">National</a>
-                    <a href="world_news.html" title=""  class=" w3-bar-item w3-button">World</a>
-                    <!--  <a href="profile.html"  class="w3-bar-item w3-button">Election 2020</a> -->	
-                    <a  id="profBtn" onclick="gtAS()" class="w3-bar-item w3-button thickBorder boldFont">  </a>										
-
-                    <!--    <a href="hometest.html"  class="w3-bar-item w3-button">test</a> -->
-                    <!--
-<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-                    -->
-                </div>
-                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
-                    <i class="fa fa-bars"></i>
-
-                </a>
-            </div>
-        </div>
-
-        <!-- Sidebar on small screens when clicking the menu icon -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left  w3-hide-large" style="display:none" id="mySidebar">
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 redText " >X</a>
-            <!--   <img src="Group.png" width="20" height="20" class='centerTabImage'> -->
-            <a href="el.html" onclick="w3_close()" class="w3-bar-item w3-button ">Election 2020</a>
-
-            <a href="wh.html" onclick="w3_close()" class="w3-bar-item w3-button ">Trump</a>
-
-            <a href="us_news.html" onclick="w3_close()" class="w3-bar-item w3-button">National</a>
-            <a href="world_news.html" onclick="w3_close()" class="w3-bar-item w3-button">World</a>
-            <hr>    
-            <a id="accBtnSO" onclick="w3_close_SI()" class="w3-bar-item w3-button boldFont">Sign In</a>
-
-        </nav>
-
-        <!-- Header with full-height image -->
-        <header class=" w3-bar-block w3-grayscale-min" id="home">
-
-
-        </header>
-
-
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
-            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption" class="w3-opacity w3-large"></p>
-            </div>
-        </div>
-        <br>
-        <br>
-
-        <!-- Header -->
-        <header class="w3-display-container w3-content w3-hide-medium w3-hide-small" style="max-width:1500px">
-            <div class="w3-row-padding w3-center w3-margin-top">
-                
-                    <div class="w3-quarter" onclick="geElection()">
-                    <div class="w3-card w3-container" style="min-height:430px">
-                        <h1 class="boldFont titleFont">Elections</h1><br>
-
-                        <img src="vote.svg" width="100" height="100" class='fillwidthy'>
-
-                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
-                        <h2 >Top stories following the 2020 election</h2>
-
-                    </div>
-                </div>
-                
-                    <div class="w3-quarter" onclick="gtWhiteHouse()">
-                    <div class="w3-card w3-container" style="min-height:430px">
-                        <h1 class="boldFont ">Trump</h1><br>
-
-                        <img src="whp.svg" width="100" height="100" class='fillwidthy'>
-
-                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
-                        <h2 >Top stories about Trump's White House</h2> 
-
-                    </div>
-                </div>
-                
-                
-                <div class="w3-quarter" onclick="gtUN()">
-                    <div class="w3-card w3-container" style="min-height:430px">
-                        <h1 class="boldFont ">National</h1><br>
-                        <img src="cptl.svg" width="100" height="100" class='fillwidthy'>
-                        <br>
-                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
-                        <h2>Top stories in the National Headlines</h2>
-                        <!--  <p>Mobile first fluid grid</p>
-                          <p>Fits any screen sizes</p>
-                          <p>PC Tablet and Mobile</p>
-                        -->
-                    </div>
-                </div>
-
-                <div class="w3-quarter" onclick="gtGlobal()">
-                    <div class="w3-card w3-container" style="min-height:430px">
-                        <h1 class="boldFont ">World</h1><br>
-                        <img src="glbl.svg" width="100" height="100" class='fillwidthy'>
-
-                        <!-- <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>  -->
-                        <h2 >Top stories following world leaders</h2>
-
-
-                    </div>
-                </div>
-
-            
-
-
-            </div>
-        </header>
-
-
-
-        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-        <div class="w3-main" style="margin-left:250px">
-
-            <div class="w3-row w3-padding-64">
-
-                <div class="w3-twothird w3-container">
-
-
-                    <ul id="friendsList">
-                    </ul>
-                    <div id="ldr" class="loader center"></div>
-
-                    <a  id = "btt" onclick="nextRun()" class="w3-button w3-light-grey fullWidth" style="visibility: hidden">Show More</a>
-
-
-
-
-                </div>
-                <div class="w3-third w3-container w3-card ">
-                    <h3 > Top Stories </h3>
-
-                    <ul id="topList">
-
-                    </ul> 
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-
-
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-32">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <!--    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-            -->
-            <p>© 2019 </p>
-        </footer>
-
-        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-        <script id="erasable">
-           
-    function isIE() {
-    var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
-    var msie = ua.indexOf('MSIE '); // IE 10 or older
-    var trident = ua.indexOf('Trident/'); //IE 11
-
-    return (msie > 0 || trident > 0);
-}
-
-
-//function to show alert if it's IE
-function ShowIEAlert(){
-    if(isIE()){
-                    window.location = "iePage.html"
-    }
-}
-
-   var isIE = /Trident/.test(navigator.userAgent) || /MSIE/.test(navigator.userAgent);
-if(isIE){
-                        window.location = "iePage.html"
-}
-
-    
-    var config = {
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+  var config = {
     apiKey: "AIzaSyC78ygb5kaYfS9RVSu1KOCw-XLmyB2OuXU",
     authDomain: "poliapp-c85e3.firebaseapp.com",
     databaseURL: "https://poliapp-c85e3.firebaseio.com",
@@ -496,10 +248,7 @@ function gtUN(){
                 window.location = "wh.html"
 
           }
-            function geElection(){
-                window.location = "el.html"
-
-          }
+          
           
           
            function gtHome() {
@@ -586,14 +335,9 @@ function gtUN(){
                                             var d = new Date();
                                             var n = d.getTime();
 
-                                         
-                
                                             firebase.database().ref().child("TOPIC_CLICK_LIST").child(childKey).child(userID).set(n);
-                                           // firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set(childData);
-                                           firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set({
-                    "viewTime": n,
-                    "viewTimeInverse": -n,
-                  "topicObject": childData});
+                                            firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set(childData);
+                                            //  document.body.style.backgroundColor = "red";
 
                                         }
                                         
@@ -612,13 +356,12 @@ function gtUN(){
                                     var lstLst1 = childData.lstArticleHeadlines;
 
 
-                                    var date = timeSince(new Date(childData.topicCreationTime * 1000));
+                                    var date = timeSince(new Date(childData.topicCreationTime));
 
                                     var myStr = 'this,is,a,test';
                                     // var lstLst = lstLst1.replace(/,/g, '-');
-//                                    div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>Including articles from: ' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
 
-                                    div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
+                                    div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>Including articles from: ' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
 
 
                                     li.appendChild(div);
@@ -633,7 +376,7 @@ function gtUN(){
 
                             if (looptyloop < 11) {
                                 hasShownAllPosts = true;
-                              // document.body.style.backgroundColor = "green";
+                                // document.body.style.backgroundColor = "green";
 
                                 nVal = 'null';
 
@@ -729,12 +472,12 @@ function gtUN(){
                                         var lstLst = childData.lstArticleHeadlines;
 
 
-                                        var date = timeSince(new Date(childData.topicCreationTime  * 1000));
+                                        var date = timeSince(new Date(childData.topicCreationTime));
 
 
 
 
-                                    div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
+                                                     div.innerHTML = '<hr><div class="w3-row ">\<div class="w3-third w3-container">\<img src="' + childData.strPicURL + '" width="350" height="200" class="pull-left w3-bar-item  w3-wide fillwidthy">\</div>\<div class="w3-twothird w3-container">\<p>' + date + ' ago</p>\<h3 class="boldFont">' + childData.topicName + '</h3>\<p>Including articles from: ' + childData.lstArticleHeadlines + '</p>\</div>\</div>'
 
 
 
@@ -754,7 +497,6 @@ function gtUN(){
 
                                 if (looptyloop < 11) {
                                     hasShownAllPosts = true;
-                              // document.body.style.backgroundColor = "green";
 
                                     nVal = 'null';
 
@@ -773,7 +515,7 @@ function gtUN(){
 
 
                         function prev() {
-                         //   document.body.style.backgroundColor = "red";
+                            document.body.style.backgroundColor = "red";
                         }
 
 
@@ -785,11 +527,7 @@ function gtUN(){
                             if (!hasShownAllPosts) {
                                 nextRun();
                             }
-                          /*  else{
-                                  var ldrV = document.getElementById("ldr");
-                                        ldrV.style.visibility = "hidden"
-                            }
-*/
+
                         }
 
 
@@ -801,9 +539,7 @@ function gtUN(){
                                 var childData = childSnapshot.val();
 
 
-           var isActive = childData.isActive;
-                                     if(isActive)
-                                     {
+
 
 
                                 var ul = document.getElementById("topList");
@@ -826,27 +562,6 @@ function gtUN(){
                                     var rd1 = childData.strRundownPoint1;
                                     var rd2 = childData.strRundownPoint2;
                                     var rd3 = childData.strRundownPoint3;
-                                    
-                                      if (isi) {
-                                            var user = firebase.auth().currentUser;
-
-                                            var userID = user.uid;
-
-
-                                            var d = new Date();
-                                            var n = d.getTime();
-
-                                         
-                
-                                            firebase.database().ref().child("TOPIC_CLICK_LIST").child(childKey).child(userID).set(n);
-                                           // firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set(childData);
-                                           firebase.database().ref().child("USERVIEWHISTORY").child(userID).child(childKey).set({
-                    "viewTime": n,
-                    "viewTimeInverse": -n,
-                  "topicObject": childData});
-
-                                        }
-                                    
                              var topicCategory = childData.topicCategory;
 
                                           var uri = 'topic.html?pvi='+childKey+'&ct='+topicCategory;
@@ -868,16 +583,12 @@ function gtUN(){
 
                                 ul.appendChild(li);
 
-                                     }
+
                             });
                         });
 
-    document.getElementById('erasable').innerHTML = "";
-
-
-        </script>
 
 
 
-    </body>
-</html>
+
+ 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div>TODO write content</div>
+        <h1 id="ya"></h1>
+        <img id = "pic2" src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+<ul id="friendsList">
+</ul>
+        
+      
+        
+    </body>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+          
+    function isIE() {
+    var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+    var msie = ua.indexOf('MSIE '); // IE 10 or older
+    var trident = ua.indexOf('Trident/'); //IE 11
+
+    return (msie > 0 || trident > 0);
+}
+
+
+//function to show alert if it's IE
+function ShowIEAlert(){
+    if(isIE()){
+                    window.location = "iePage.html"
+    }
+}
+  
+  
+  
+  var config = {
+    apiKey: "AIzaSyC78ygb5kaYfS9RVSu1KOCw-XLmyB2OuXU",
+    authDomain: "poliapp-c85e3.firebaseapp.com",
+    databaseURL: "https://poliapp-c85e3.firebaseio.com",
+    projectId: "poliapp-c85e3",
+    storageBucket: "poliapp-c85e3.appspot.com",
+    messagingSenderId: "594264278951"
+  };
+  //var res = encodeURI(uri);
+
+  firebase.initializeApp(config);
+  var bigy = document.getElementById('ya');
+    var pix = document.getElementById('pic2');
+
+  var dbRef = firebase.database().ref().child('a');
+  dbRef.on('value', snap => bigy.innerText = snap.val());
+  
+  var dbRef2 = firebase.database().ref().child('a1');
+  dbRef2.on('value', snap => pix.src = snap.val());
+  //.startAt('-LUDlc4m2lvAgPI0_r-9').endAt('-LUDmuuOWeb7SDbB336X')
+  var ref = firebase.database().ref().child('CATEGORIES').child('Item 3');
+  ref.once('value', function(snapshot) {
+  snapshot.forEach(function(childSnapshot) {
+    var childKey = childSnapshot.key;
+    var childData = childSnapshot.val();
+
+    bigy.innerText = childData.topicName;
+    
+      var ul = document.getElementById("friendsList");
+    var li = document.createElement('li');
+     var g = document.createElement('div');
+     //g.setAttribute("123", "Div1");
+     g.style.height = "50";  
+     
+     
+
+   li.appendChild(g);
+   
+    var div = document.createElement('div');
+
+    div.className = 'row';
+
+div.onclick = function () {
+    // alert(this.innerHTML);
+
+
+ // var getInput = prompt("Hey type something here: ");
+   localStorage.setItem("storageName",childKey);
+   //window.location = "www.example.com"
+window.location = "topic.html"
+
+
+
+   
+   };
+
+ var date = new Date(childData.topicCreationTime);
+
+   /* div.innerHTML =
+        '<label> '+childData.topicName+' </label>\<label> '+childData.topicName+' </label>\
+        <input type="text" name="value" value="" />\<img id = "pic2" src="'+childData.strPicURL+'" alt="Flowers in Chania" width="460" height="345">\
+        
+       ';
+       */
+      
+      
+     div.innerHTML =
+        '<label> "'+childData.topicName+'" </label>\\n\
+<label> "'+date.toString()+'" </label>\\n\
+<img id = "pic2" src="'+childData.strPicURL+'" alt="Flowers in Chania" width="460" height="345">';
+
+/*
+     div.innerHTML =
+        '<input type="text" name="name" value="'+ childData.topicName+'" />\
+        <input type="text" name="value" value="" />\<img id = "pic2" src="'+childData.strPicURL+'" alt="Flowers in Chania" width="460" height="345">\
+        <label> "'+childData.topicName+'" </label>\
+        <input type="button" value="-" onclick="removeRow(this)">';
+
+ */
+    //document.getElementById('content').appendChild(div);
+    li.appendChild(div);
+
+    //li.appendChild(document.createTextNode(childData.topicName));
+    ul.appendChild(li);
+
+    
+    });
+});
+  
+</script>
+</html>
